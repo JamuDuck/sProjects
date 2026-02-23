@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
  // Main
-class Runner {
+class Runner2 {
     public static void main(String[] args) {
        // Pet Temp
         Pet pet = new Pet();

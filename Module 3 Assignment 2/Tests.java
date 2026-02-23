@@ -28,6 +28,7 @@ public class Tests {
         score = newScore;
     }
 
+    // Loop for avr
     public void getAverage(){
         Scanner input = new Scanner(System.in);
         int sum = 0;
@@ -46,7 +47,7 @@ public class Tests {
     }
 
 
-    // Tostring
+    // Avr display (text)
     public String toString(){
         return "The average of the " + count +
                 " scores entered is " +

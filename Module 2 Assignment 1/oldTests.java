@@ -1,4 +1,4 @@
-public class Tests {
+public class oldTests {
     public static void main(String[] args) {
         // Test Score Vars //
         float score1 = 88.2f;
