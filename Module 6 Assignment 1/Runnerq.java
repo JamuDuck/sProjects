@@ -6,12 +6,13 @@ import javax.swing.JOptionPane;
 
 public class Runnerq {
 
-        public static void main(String[] args)
-        {
-            String input;     // To hold input
-            int questions;    // Number of questions
-            int missed;       // Number of questions missed
+    public static void main(String[] args)
+    {
+        String input;
+        int questions;
+        int missed;
 
+        try {
             // Get the number of questions on the exam
             input = JOptionPane.showInputDialog("How many questions are on the exam?");
             questions = Integer.parseInt(input);
@@ -28,9 +29,14 @@ public class Runnerq {
             message += " points.\nThe exam score is " + exam.getScore();
             message += "\nThe exam grade is " + exam.getGrade();
             JOptionPane.showMessageDialog(null, message);
-
-            System.exit(0);
         }
+        catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(null, "Invalid input. Please enter numbers only.");
+        }
+        catch (ArithmeticException e) {
+            JOptionPane.showMessageDialog(null, "Cannot divide by zero.");
+        }
+
+        System.exit(0);
     }
-
-
+}
